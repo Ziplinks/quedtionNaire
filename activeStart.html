@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="renderer" content="webkit">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <title>魔百和空中课堂调研问卷开始</title>
+  <link rel="stylesheet" href="../questionNaire/css/base.css" media="all">
+  <link rel="stylesheet" type="text/css" href="../questionNaire/css/layui.css" />
+  <link rel="stylesheet" type="text/css" href="../questionNaire/css/activeStart.css" />
+</head>
+<body>
+  <div class="box-top">
+    <div class="header">
+      <div class="header-lf">
+        <img src="../questionNaire/image/common/back.png" style="" alt="" srcset="">
+        <span>魔百和空中课堂调研问卷</span>
+      </div>
+      <div class="header-rt">
+        <p class="commit-btn">发布</p>
+      </div>
+    </div>
+  </div>
+  
+  <div class="content">
+    <div class="column">
+      <div class="column-box">
+        <p class="common-title">调查渠道选择</p>
+        <div class="channel">
+          <ul class="clearfix">
+            <li>
+              <img src="../questionNaire/image/activeResult/dtfw.png" alt="" srcset="">
+              <p class="img-select">短厅WAP访问</p>
+            </li>
+            <li>
+              <img src="../questionNaire/image/activeResult/ztbmfwcd.png" alt="" srcset="">
+              <p class="img-select">掌厅便民服务菜单</p>
+            </li>
+            <li>
+              <img src="../questionNaire/image/activeResult/erweima.png" alt="" srcset="">
+              <p class="img-select">二维码</p>
+            </li>
+          <ul>
+        </div>
+        <p class="common-title">调查渠道选择</p>
+        <div class="channel-box">
+          <p class="question-label">填写活动名称：</p>
+          <input type="text" class="question-txt other-box1"></input>
+        </div>
+        <div class="channel-box">
+          <p class="question-label">欢迎语：</p>
+          <input type="text" class="question-txt other-box2"></input>
+        </div>
+        <div class="channel-box">
+          <p class="question-label">结束语：</p>
+          <input type="text" class="question-txt other-box3"></input>
+        </div>
+        <div class="channel-box">
+          <p class="question-label">调研周期：</p>
+          <div class="question-txt other-box4">
+            <div class="layui-input-inline" style="width: 100%;display: flex;">
+              <img src="../questionNaire/image/common/date.png" style="width:14px;height:14px;display:block;margin-top:10px;" alt="" srcset="">
+              <input type="text" class="layui-input" id="test6" placeholder=" 至 " style="border:none;">
+            </div>
+          </div>
+        </div>
+        <div class="channel-box">
+          <p class="question-label">目标客群配置：</p>
+          <div class="question-txt other-box6">
+            <p class="uploadBtn">上传客户群</p>
+            <a class="other-a2">下载文件导入EXCEL模板</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+<script src="../questionNaire/js/jquery-1.8.3.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="../questionNaire/js/layui.js" type="text/javascript" charset="utf-8"></script>
+<script>
+  layui.use('laydate', function(){
+    var laydate = layui.laydate;
+    //日期范围
+    laydate.render({
+      elem: '#test6'
+      ,range: true
+    });
+  })
+</script>
+</html>
